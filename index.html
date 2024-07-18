@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="Righteous/Righteous-Regular.ttf">
+    <link rel="stylesheet" href="style.css">
+ 
+   
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h1>Customer Transactions</h1>
+
+        <!-- Search input -->
+        <!-- <input type="text" class="searchInput" placeholder="Search by name or amount"> -->
+        <div class="form-floating mb-3">
+            <input type="search" class="form-control searchInput" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Search by name or amount</label>
+          </div>
+        
+        <!-- Table to display customers and transactions -->
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Transaction Date</th>
+                    <th>Transaction Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+        
+        <!-- Chart to display total transaction amount per day -->
+        <div class="chart-container">
+            <canvas id="transactionChart"></canvas>
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
